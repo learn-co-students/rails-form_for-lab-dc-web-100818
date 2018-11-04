@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Student Classes</title>
+</head>
+<body>
+
+ <% @school_classes.each do |school_class| %>
+  <%= link_to school_class.classroom, school_class_path(school_class)%>
+ <% end %>
+  
+</body>
+</html>
