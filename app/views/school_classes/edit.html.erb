@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Update School Class</title>
+</head>
+<body>
+  <h3>Update School Class</h3>
+  <%= form_for @school_class do |f| %>
+    <%= f.label 'title' %>
+    <%= f.text_field :title %>
+    <%= f.label 'room_number'%>
+    <%= f.text_field :room_number%>
+    <%= f.submit 'Update School class'%>
+  <% end %>
+</body>
+</html>
